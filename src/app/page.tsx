@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import ArikTest from "./components/ArikTest";
 import { useState } from "react";
 import seeds from "./lib/seeds";
 import Canvas from "./components/Canvas";
