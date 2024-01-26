@@ -19,7 +19,7 @@ const GameRoomPage = () => {
     }
 
     return (
-        <div>
+        <main className="main-container">
 
             <form onSubmit={submitName}>
                 <label>What your name?</label>
@@ -43,7 +43,7 @@ const GameRoomPage = () => {
                     </>
                     : null}
             </form>
-        </div>
+        </main>
     )
 }
 

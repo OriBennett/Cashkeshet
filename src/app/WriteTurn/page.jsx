@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const WriteTurnPage = () => {
   return (
-      <div>
+      <main className="main-container">
           
           WriteTurnPage
       
@@ -15,7 +15,7 @@ const WriteTurnPage = () => {
           </Link>
       
       
-      </div>
+      </main>
   )
 }
 

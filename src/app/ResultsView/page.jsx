@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ResultsViewPage = () => {
   return (
-    <div>
+    <main className="main-container">
       ResultsViewPage
     <hr />
 
@@ -10,7 +10,7 @@ const ResultsViewPage = () => {
         <button>New Game</button>
       </Link>
 
-    </div>
+    </main>
   )
 }
 

@@ -11,7 +11,7 @@ const DrawTurnPage = () => {
   const [scribble, setScribble] = useState(null);
 
   return (
-    <div>
+    <main className="main-container">
       <Canvas
             startingPaths={seed.paths}
             onScribble={setScribble}
@@ -28,7 +28,7 @@ const DrawTurnPage = () => {
         <button>ResultsView</button>
       </Link>
 
-    </div>
+    </main>
   )
 }
 

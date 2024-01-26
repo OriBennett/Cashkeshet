@@ -7,7 +7,7 @@ import '@fontsource/roboto/700.css';
 
 export default function Home() {  
   return (
-    <main >
+    <main className="main-container">
       <h1>Welcome to CashCashIt</h1>
 
 
@@ -17,8 +17,6 @@ export default function Home() {
       <Link href="/GameRoom">
         <button>Cachkesh It!</button>
       </Link>
-
-      {/*  */}
 
     </main>
   );
