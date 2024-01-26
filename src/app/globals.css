@@ -3,7 +3,13 @@
     padding: 0;
 }
 
+.haeder-container{
+    background-color: #5fff00;
+}
 
 .app-header{
-    background-color: #5fff00;
+    font-weight: bold; /* Make the text bold */
+    color: rgb(0, 101, 0); /* Set text color to green */
+    text-shadow: 0 0 1px black; /* Apply black outline */
+    font-size: 5vw; /* Set font size relative to viewport width */
 }
