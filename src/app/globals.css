@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 2;
+    padding: 2;
 }
 
 .haeder-container{
@@ -20,3 +20,38 @@
     margin: 3px;
     min-width: 400px;
 }
+.w-full {
+    width: 100%;
+}
+  
+.aspect-square {
+    aspect-ratio: 1/1; /* Square aspect ratio */
+}
+
+.border-none {
+    border: none;
+}
+
+.cursor-crosshair {
+    cursor: crosshair;
+}
+
+.shorter-than-page {
+    height: 30vh; 
+}
+
+.auto-margin{
+    margin: auto;
+}
+
+.canvass{
+    width: 50%;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+  }

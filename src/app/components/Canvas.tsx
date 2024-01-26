@@ -3,6 +3,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 
+
 import { Undo as UndoIcon, Trash as TrashIcon } from "lucide-react";
 
 export default function Canvas({
@@ -23,9 +24,9 @@ export default function Canvas({
     loadStartingPaths();
   }, []);
 
-  async function loadStartingPaths() {
-    await canvasRef.current.loadPaths(startingPaths);
-    setScribbleExists(true);
+  function loadStartingPaths() {
+    canvasRef.current.resetCanvas;
+    setScribbleExists(false);
     onChange();
   }
 
@@ -51,7 +52,7 @@ export default function Canvas({
   };
 
   return (
-    <div className="relative">
+    <div className="canvass">
       {scribbleExists || (
         <div>
           <div className="absolute grid w-full h-full p-3 place-items-center pointer-events-none text-xl">
@@ -62,7 +63,8 @@ export default function Canvas({
 
       <ReactSketchCanvas
         ref={canvasRef}
-        className="w-full aspect-square border-none cursor-crosshair"
+        
+        className="aspect-square border-none cursor-crosshair shorter-than-page "
         strokeWidth={4}
         strokeColor="black"
         onChange={onChange}
@@ -70,7 +72,7 @@ export default function Canvas({
       />
 
       {scribbleExists && (
-        <div className="animate-in fade-in duration-700 text-left">
+        <div className="animate-in fade-in duration-700 text-left ">
           <button className="lil-button" onClick={undo}>
             <UndoIcon className="icon" />
             Undo

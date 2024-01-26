@@ -19,14 +19,16 @@ const DrawTurnPage = () => {
             setScribbleExists={setScribbleExists}
           />
 
-      DrawTurnPage
+      
       <hr />
+      <div className="flex-container">
       <Link href="/WriteTurn">
-        <button>WriteTurn</button>
+        <button className="auto-margin">WriteTurn</button>
       </Link>
       <Link href="/ResultsView">
-        <button>ResultsView</button>
+        <button className="auto-margin">ResultsView</button>
       </Link>
+      </div>
 
     </main>
   )
