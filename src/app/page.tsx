@@ -4,6 +4,7 @@ import ArikTest from "./components/ArikTest";
 import { useState } from "react";
 import seeds from "./lib/seeds";
 import Canvas from "./components/Canvas";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -14,15 +15,22 @@ export default function Home() {
 
   return (
     <main >
-      GOOD LUCK FOR US 🍀
+      <h1>Welcome to CashCashIt</h1>
 
-        <ArikTest/>
-        <Canvas
+
+      <mark>Image with details text</mark>
+      <br />
+
+      <Link href="/GameRoom">
+        <button>Cachkesh It!</button>
+      </Link>
+
+      {/* <Canvas
             startingPaths={seed.paths}
             onScribble={setScribble}
             scribbleExists={scribbleExists}
             setScribbleExists={setScribbleExists}
-          />
+          /> */}
 
     </main>
   );
