@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const ResultsViewPage = () => {
   return (
-    <main className="main-container">
+    <main className="main-container flex-container">
       ResultsViewPage
-    <hr />
-
-      <Link href="/">
-        <button>New Game</button>
-      </Link>
-
+      <hr />
+      <div className="flex-container">
+        <Link href="/">
+          <button>New Game</button>
+        </Link>
+      </div>
     </main>
-  )
-}
+  );
+};
 
-export default ResultsViewPage
+export default ResultsViewPage;

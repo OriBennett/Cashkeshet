@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import seeds from "../lib/seeds";
@@ -11,27 +11,25 @@ const DrawTurnPage = () => {
   const [scribble, setScribble] = useState(null);
 
   return (
-    <main className="main-container">
+    <main className="main-container flex-container">
       <Canvas
-            startingPaths={seed.paths}
-            onScribble={setScribble}
-            scribbleExists={scribbleExists}
-            setScribbleExists={setScribbleExists}
-          />
+        startingPaths={seed.paths}
+        onScribble={setScribble}
+        scribbleExists={scribbleExists}
+        setScribbleExists={setScribbleExists}
+      />
 
-      
       <hr />
       <div className="flex-container">
-      <Link href="/WriteTurn">
-        <button className="auto-margin">WriteTurn</button>
-      </Link>
-      <Link href="/ResultsView">
-        <button className="auto-margin">ResultsView</button>
-      </Link>
+        <Link href="/WriteTurn">
+          <button className="auto-margin">WriteTurn</button>
+        </Link>
+        <Link href="/ResultsView">
+          <button className="auto-margin">ResultsView</button>
+        </Link>
       </div>
-
     </main>
-  )
-}
+  );
+};
 
-export default DrawTurnPage
+export default DrawTurnPage;
