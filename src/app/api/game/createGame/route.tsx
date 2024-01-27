@@ -2,7 +2,7 @@ import { game1 } from "../thegame";
 
 /**
  * @swagger
- * /api/hello:
+ * /api/game/createGame:
  *   get:
  *     description: Returns the hello world
  *     responses:
