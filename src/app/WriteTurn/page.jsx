@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 // import fetchRandomDoodle from "../lib/getDoodleFromApi";
-import {categories} from "../data/data";
+import { categories } from "../data/data";
 
 const WriteTurnPage = () => {
   const [guess, setGuess] = useState("");
@@ -29,7 +29,7 @@ const WriteTurnPage = () => {
         console.error('Error fetching doodle:', error);
       }
     };
-    console.log( categories[Math.floor(Math.random() * categories.length)])
+    console.log(categories[Math.floor(Math.random() * categories.length)])
     // setCategory(categories[Math.floor(Math.random() * categories.length)])
     fetchRandomDoodle(); // Call the fetchRandomDoodle function
     console.log('fetchRandomDoodle(category):', fetchRandomDoodle(category))
@@ -52,7 +52,7 @@ const WriteTurnPage = () => {
     <main className="main-container flex-container">
       {
         randomDoodle &&
-        <Image  priority width={300} height={300} src={randomDoodle} alt={ '??'} />
+        <Image priority width={300} height={300} src={randomDoodle} alt={'??'} />
       }
       <label>What is your guess?</label>
       <br />
