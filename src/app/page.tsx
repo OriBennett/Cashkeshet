@@ -9,8 +9,7 @@ export default function Home() {
   return (
     <main className="main-container flex-container">
       <h1>Welcome to CashCashIt</h1>
-
-      <mark>Image with details text</mark>
+      <img src="welcome.webp"/>
       <br />
 
       <Link href="/GameRoom">

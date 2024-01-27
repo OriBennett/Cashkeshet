@@ -7,8 +7,8 @@ const WriteTurnPage = () => {
 
   return (
     <main className="main-container flex-container">
-      Picture here
-      <label>What is your guess?</label>
+      <img src="doodle.jpg"/>
+      <label>What is drawn in the picture? </label>
       <br />
       <input type="text" onChange={(e) => setGuess(e.target.value)} />
       <br />
