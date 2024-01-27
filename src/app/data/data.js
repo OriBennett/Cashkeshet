@@ -13,6 +13,6 @@ export const categories = [
   "proud", "embarrassed", "bored", "loved", "lonely", "energetic", "relaxed", "grateful", "hopeful", "amused",
   // Objects
   "key", "door", "window", "mirror", "clock", "lamp", "plate", "fork", "knife", "spoon",
-  "bottle", "remote", "television", "rug", "pillow", "blanket", "mirror", "basket", "vase", "candle"
+  "bottle", "remote", "television", "rug", "pillow", "blanket", "mirror", "basket", "vase", "candle",
 ];
 
