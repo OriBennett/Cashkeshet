@@ -132,5 +132,7 @@ export class Game {
     }
 }
 
-// Example usage
+const game1 = new Game();
+export {game1};
+
 

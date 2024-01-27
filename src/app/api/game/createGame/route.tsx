@@ -1,3 +1,5 @@
+import { game1 } from "../thegame";
+
 /**
  * @swagger
  * /api/hello:
@@ -7,9 +9,12 @@
  *       200:
  *         description: Hello World!
  */
+
 export async function GET(_request: Request) {
-    // Do whatever you want
-    return new Response('Hello World!', {
+  game1.initGame();
+
+  return new Response('Game initialized', {
       status: 200,
     });
   }
+  
