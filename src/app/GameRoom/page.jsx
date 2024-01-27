@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
-// import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const GameRoomPage = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
   const [playerName, setPlayerName] = useState("");
   const [showLinks, setShowLinks] = useState(false);
@@ -14,6 +14,7 @@ const GameRoomPage = () => {
     e.preventDefault();
     alert("Hello " + playerName);
     setShowLinks(true);
+    router.push('/DrawTurn')
   };
 
   return (
@@ -26,7 +27,7 @@ const GameRoomPage = () => {
 
         <button>SUBMIT</button>
 
-        {showLinks ? (
+        {/* {showLinks ? (
           <>
             <hr />
             <div>
@@ -38,7 +39,7 @@ const GameRoomPage = () => {
               </Link>
             </div>
           </>
-        ) : null}
+        ) : null} */}
       </form>
     </main>
   );
